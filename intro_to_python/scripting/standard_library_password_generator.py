@@ -28,7 +28,7 @@ def generate_password():
     # for word in random.sample(word_list, k=3):
     #     password += word
     # return password
-    return ''.join(random.sample(word_list, k=3))
+    return ''.join(random.sample(word_list, k=  3))
 
 # test your function
 print(generate_password())

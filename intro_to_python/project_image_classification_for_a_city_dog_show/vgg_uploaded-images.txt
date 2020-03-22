@@ -1,0 +1,113 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 8 key-value pairs.
+Below are 8 of them:
+ 1 key:                    mastiff.jpg  label:                           
+ 2 key:                     dog_01.jpg  label:                        dog
+ 3 key:                     dog_02.jpg  label:                        dog
+ 4 key:                     dog_03.jpg  label:                        dog
+ 5 key:                  cofee_01.jpeg  label:                      cofee
+ 6 key:                     dog_04.jpg  label:                        dog
+ 7 key:                     cat_01.jpg  label:                        cat
+ 8 key:            Tibetan_Mastiff.jpg  label:                    tibetan
+
+     MATCH:
+
+                   mastiff.jpg: 
+Real:                              Classifier:                   bull mastiff
+
+                    cat_01.jpg: 
+Real:                        cat   Classifier:              egyptian cat, cat
+
+           Tibetan_Mastiff.jpg: 
+Real:                    tibetan   Classifier:                tibetan mastiff
+
+ NOT A MATCH:
+
+                    dog_01.jpg: 
+Real:                        dog   Classifier:                    toy terrier
+
+                    dog_02.jpg: 
+Real:                        dog   Classifier: pembroke, pembroke welsh corgi, corgi
+
+                    dog_03.jpg: 
+Real:                        dog   Classifier:               english foxhound
+
+                 cofee_01.jpeg: 
+Real:                      cofee   Classifier:                       espresso
+
+                    dog_04.jpg: 
+Real:                        dog   Classifier:                     great dane
+
+# Total Images 8 # Matches: 3 # NOT Matches: 5
+
+     MATCH:
+
+                   mastiff.jpg: 
+Real:                              Classifier:                   bull mastiff  
+PetLabelDog: 0  ClassLabelDog: 1
+
+                    cat_01.jpg: 
+Real:                        cat   Classifier:              egyptian cat, cat  
+PetLabelDog: 0  ClassLabelDog: 0
+
+           Tibetan_Mastiff.jpg: 
+Real:                    tibetan   Classifier:                tibetan mastiff  
+PetLabelDog: 0  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+                    dog_01.jpg: 
+Real:                        dog   Classifier:                    toy terrier  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    dog_02.jpg: 
+Real:                        dog   Classifier: pembroke, pembroke welsh corgi, corgi  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    dog_03.jpg: 
+Real:                        dog   Classifier:               english foxhound  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                 cofee_01.jpeg: 
+Real:                      cofee   Classifier:                       espresso  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    dog_04.jpg: 
+Real:                        dog   Classifier:                     great dane  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 8 # Matches: 3 # NOT Matches: 5
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  8  N Dog Images:  4  N NotDog Images:  4 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  50.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  8  N Dog Images:  4  N NotDog Images:  4 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  50.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :   8
+N Dog Images        :   4
+N Not-Dog Images    :   4
+pct_match           : 37.500000
+pct_correct_dogs    : 100.000000
+pct_correct_breed   : 0.000000
+pct_correct_notdogs : 50.000000
+
+INCORRECT Dog/NOT Dog Assignments:
+Filename:                    mastiff.jpg    Real:                  Not a Dog   Classifier:                            Dog
+Filename:            Tibetan_Mastiff.jpg    Real:                  Not a Dog   Classifier:                            Dog
+
+INCORRECT Dog Breed Assignment:
+Filename:                     dog_01.jpg    Real:                        dog   Classifier:                    toy terrier
+Filename:                     dog_02.jpg    Real:                        dog   Classifier: pembroke, pembroke welsh corgi, corgi
+Filename:                     dog_03.jpg    Real:                        dog   Classifier:               english foxhound
+Filename:                     dog_04.jpg    Real:                        dog   Classifier:                     great dane
+
+** Total Elapsed Runtime: 0:0:6
