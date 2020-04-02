@@ -1,6 +1,8 @@
 import numpy as np
 import torch
 
+import torchvision
+
 # create a random tensor
 x = torch.rand(3, 2)
 print(x)
