@@ -9,6 +9,9 @@ import matplotlib.pyplot as plt
 import json
 from PIL import Image
 
+# Flower data = https://s3.amazonaws.com/content.udacity-data.com/nd089/flower_data.tar.gz
+
+
 # LOAD THE DATA SETS
 data_dir = 'flowers'
 train_dir = data_dir + '/train'

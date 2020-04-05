@@ -11,6 +11,7 @@ from torchvision import datasets, transforms, models
 from collections import OrderedDict
 from PIL import Image
 
+# Flower data = https://s3.amazonaws.com/content.udacity-data.com/nd089/flower_data.tar.gz
 
 def get_arguments():
     """ gets the command line arguments """
